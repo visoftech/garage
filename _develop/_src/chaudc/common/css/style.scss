@@ -1,0 +1,62 @@
+@font-face {
+  font-family: "Akrobat-Black";
+  src: url(../fonts/Akrobat-Black.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Akrobat-Regular";
+  src: url(../fonts/Akrobat-Regular.woff) format("woff");
+}
+
+@font-face {
+    font-family: "Akrobat-SemiBold";
+    src: url("../fonts/Akrobat-SemiBold.otf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Akrobat-Thin";
+    src: url("../fonts/Akrobat-Thin.otf");
+}
+
+@charset "UTF-8";
+@import "./_mixin/mixin";
+@include min-screen() {
+  @import "./_style_pc.scss";
+}
+
+@include max-screen() {
+  @import "./_style_sp.scss";
+}
+
+@keyframes sdb10 {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    transform: translate(0, 10px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/*keyframe animations*/
+.first {
+  animation: bannermove 20s linear infinite;
+}
+ 
+@keyframes "bannermove" {
+ 0% {
+    margin-left: 0px;
+ }
+ 100% {
+    margin-left: -2000px;
+ }
+ 
+}

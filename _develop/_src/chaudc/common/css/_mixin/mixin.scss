@@ -1,0 +1,44 @@
+@charset "utf-8";
+// ブレークポイント ---------------------------------------------------------------------------
+$config_base_fontsize : 10;
+$config_sp_scale_font : 2;
+
+$breakpoint-pc: 769px;
+$breakpoint-sp: 768px;
+
+$ak: 'Akrobat-Regular';
+$ak_thin: 'Akrobat-Thin';
+$ak_black: 'Akrobat-Black';
+$ak_bold: 'Akrobat-SemiBold';
+
+
+@function rem($font_size_psd) {
+  $rem: $font_size_psd / $config_base_fontsize;
+  @return #{$rem}rem;
+}
+
+@function rem2($font_size_psd) {
+  $rem: $font_size_psd / $config_base_fontsize / $config_sp_scale_font;
+  @return #{$rem}rem;
+}
+@function vw($px){
+  $calvw: $px * 100 / 768;
+  @return #{$calvw}vw;
+}
+@mixin min-screen() {
+  @media screen and (min-width: $breakpoint-pc), print {
+    @content;
+  }
+}
+@mixin max-screen() {
+  @media screen and (max-width: $breakpoint-sp) {
+    @content;
+  }
+}
+@mixin placeholder {
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}
+}
+
