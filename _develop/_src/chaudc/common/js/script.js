@@ -230,10 +230,37 @@
 // })()
 
 $(document).ready(function() {
+  // anchor link
   $(function() {
     $('a[href*=\\#]').on('click', function(e) {
       e.preventDefault();
       $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top }, 600, 'linear');
     });
   });
+
+  //slick js 
+  $('.model_slider').slick({
+      autoplay:true,
+      slidesToShow: 1,
+      autoplaySpeed: 3000,
+      slidesToScroll:1,
+      focusOnSelect: false,
+      centerMode: false,
+      // vertical: false,
+      //   asNavFor: '.thumb-item-nav'
+      // });
+    });
+
+    // $('.thumb-item-nav').slick({
+    //     slidesToShow:  6,
+    //     asNavFor: '.slider',
+    //     centerMode: false,
+    //     focusOnSelect: true,
+    //     vertical: false,
+    //     arrows:  false,
+    //     accessibility: true,
+    //     slickPause: false,
+    // });
 });
+
+
