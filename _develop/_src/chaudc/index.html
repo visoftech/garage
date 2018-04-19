@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="format-detection" content="telephone=no">
   <meta name="Description" content="description">
@@ -22,15 +22,6 @@
 
 <body>
   <div id="wrapper" class="wrapper">
-    <!-- icon menu -->
-    <div id="nav_icon" class="nav_icon">
-      <div class="icon_menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-    <!-- end icon menu -->
     <!-- header -->
     <header id="header" class="header">
       <!--#include virtual="./include/header.inc"-->
@@ -39,11 +30,11 @@
     <!-- section main -->
     <section id="section_top" class="main_top">
       <div class="main_banner">
-        <img src="./images/main_banner.jpg" alt="main_banner">
+        <img class="resimg" src="./images/main_banner_pc.jpg" alt="main_banner">
       </div>
       <div class="main_description">
         <div class="inner">
-          <h2><img src="./images/main_des.png" alt="Pushing the limits for Better"></h2>
+          <h2><img class="resimg" src="./images/main_des_pc.png" alt="Pushing the limits for Better"></h2>
         </div>
       </div>
       <div class="scroll_btn">
@@ -74,7 +65,8 @@
     <div id="intro" class="intro">
       <div class="row">
         <div class="video_image">
-          <img src="./images/video_mess.jpg" alt="video">
+          <img id="img_thumb" class="video_thumb" src="./images/video_mess.jpg" alt="video">
+          <iframe id="video" src="https://www.youtube.com/embed/B2B0GMtowmU" encrypted-media allowfullscreen></iframe>
         </div>
         <div class="intro_txt">
           <p>いいクルマとは何か。そこに明確な答えはない。
@@ -152,16 +144,52 @@
               <img src="./images/model_1.png" alt="models">
             </div>
             <div class="slick_item">
-              <img src="./images/model_2.png" alt="models"></div>
+              <img src="./images/model_2.png" alt="models">
+            </div>
             <div class="slick_item">
-              <img src="./images/model_3.png" alt="models"></div>
+              <img src="./images/model_3.png" alt="models">
+            </div>
             <div class="slick_item">
-              <img src="./images/model_4.png" alt="models"></div>
+              <img src="./images/model_4.png" alt="models">
+            </div>
             <div class="slick_item">
-              <img src="./images/model_5.png" alt="models"></div>
+              <img src="./images/model_5.png" alt="models">
+            </div>
             <div class="slick_item">
-              <img src="./images/model_6.png" alt="models"></div>
+              <img src="./images/model_6.png" alt="models">
+            </div>
           </div>
+        </div>
+        <div class="navi_slider">
+          <ul class="title_nav">
+            <li>取り扱い車種</li>
+          </ul>
+          <ul class="slider-nav">
+            <li>
+              <span>GR SPORT</span>
+              <br>PRIUS PHV
+            </li>
+            <li>
+              <span>GR SPORT</span>
+              <br>NOAH
+            </li>
+            <li>
+              <span>GR</span>
+              <br>86
+            </li>
+            <li>
+              <span>GR SPORT</span>
+              <br>AQUA
+            </li>
+            <li>
+              <span>GR SPORT</span>
+              <br>PRIUSα
+            </li>
+            <li>
+              <span>GRMN</span>
+              <br>Vitz
+            </li>
+          </ul>
         </div>
       </div>
     </section>
@@ -181,9 +209,9 @@
         <div class="staff_block">
           <img src="./images/staff_2.jpg" alt="staff">
           <div class="name">
-            <p class="ja_name">新井 努</p>
+            <p class="ja_name">鈴木 甲志</p>
             <p class="en_name">
-              <span>TSUTOMU ARAI</span>
+              <span>KATSUSHI SUZUKI</span>
               <span>GR CONSULTANT</span>
             </p>
           </div>
@@ -191,10 +219,9 @@
         <div class="staff_block">
           <img src="./images/staff_3.jpg" alt="staff">
           <div class="name">
-            <p class="ja_name">新井 努</p>
+            <p class="ja_name">佐藤 明里</p>
             <p class="en_name">
-              <span>TSUTOMU ARAI</span>
-              <span>GR CONSULTANT</span>
+              <span>AKARI　SATO</span>
             </p>
           </div>
         </div>
